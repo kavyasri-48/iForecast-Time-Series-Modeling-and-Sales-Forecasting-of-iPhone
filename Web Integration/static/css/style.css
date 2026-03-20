@@ -1,0 +1,344 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#0A0F1C,#121826,#1C2333);
+    color:#EAF2FF;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    width:260px;
+    height:100vh;
+    background:#0F172A;
+    padding-top:30px;
+    box-shadow:4px 0 35px rgba(0,0,0,0.85);
+}
+
+.logo{
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:40px;
+    background:linear-gradient(90deg,#3B82F6,#60A5FA,#93C5FD);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:logoGlow 3s ease-in-out infinite alternate;
+}
+
+/* Logo Glow Animation */
+@keyframes logoGlow{
+    from{ text-shadow:0 0 10px rgba(59,130,246,0.4); }
+    to{ text-shadow:0 0 25px rgba(96,165,250,0.9); }
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 30px;
+    color:#B6C2D1;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+.sidebar a:hover{
+    background:linear-gradient(90deg,rgba(59,130,246,0.2),rgba(96,165,250,0.2));
+    color:#60A5FA;
+    padding-left:40px;
+}
+
+/* Active Selected Menu (No Yellow Now) */
+.sidebar a.active{
+    background:linear-gradient(90deg,#2563EB,#3B82F6);
+    color:#ffffff;
+    box-shadow:0 0 20px rgba(59,130,246,0.6);
+}
+
+/* Index Page Title Size */
+
+.hero h1{
+    font-size:31px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Main Area */
+
+.main{
+    margin-left:260px;
+    padding:40px;
+}
+
+/* Glass Cards with Soft Glow */
+
+.glass{
+    background:rgba(20,28,45,0.8);
+    backdrop-filter:blur(18px);
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 0 40px rgba(37,99,235,0.15);
+    position:relative;
+    overflow:hidden;
+}
+
+/* Animated Edge Glow */
+.glass::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:18px;
+    padding:1px;
+    background:linear-gradient(120deg,#3B82F6,#60A5FA,#2563EB);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    animation:borderGlow 4s linear infinite;
+}
+
+@keyframes borderGlow{
+    0%{ filter:hue-rotate(0deg); }
+    100%{ filter:hue-rotate(360deg); }
+}
+
+
+/* Buttons */
+
+.big-btn{
+    padding:18px 40px;
+    font-size:20px;
+    border-radius:14px;
+    border:none;
+    margin:10px;
+    transition:0.3s;
+}
+
+.blue{
+    background:linear-gradient(90deg,#2563EB,#3B82F6);
+    color:#F8FAFC;
+    box-shadow:0 0 20px rgba(59,130,246,0.4);
+}
+
+.blue:hover{
+    transform:scale(1.08);
+}
+
+.outline{
+    border:2px solid #3B82F6;
+    background:transparent;
+    color:#3B82F6;
+}
+
+.outline:hover{
+    background:linear-gradient(90deg,#3B82F6,#60A5FA);
+    color:#0A0F1C;
+}
+
+/* KPI */
+
+.kpi{
+    font-size:42px;
+    font-weight:bold;
+    color:#60A5FA;
+}
+
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background: rgba(15,23,42,0.85);
+    backdrop-filter: blur(18px);
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#EAF2FF;
+    margin-left:25px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#60A5FA;
+}
+
+
+/* HERO */
+.hero{
+    text-align:center;
+    margin-top:90px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+    background:linear-gradient(90deg,#60A5FA,#3B82F6);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    font-size:20px;
+    width:60%;
+    margin:auto;
+    line-height:1.6;
+    opacity:0.85;
+}
+
+
+/* HERO BUTTONS */
+.hero-buttons{
+    margin-top:40px;
+}
+
+.big-btn{
+    padding:16px 34px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    margin:15px;
+    cursor:pointer;
+    background:linear-gradient(90deg,#2563EB,#3B82F6);
+    color:#0A0F1C;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.big-btn:hover{
+    background:linear-gradient(90deg,#3B82F6,#93C5FD);
+    transform:scale(1.05);
+}
+
+
+/* KPI SECTION */
+
+.kpi-section{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:90px;
+    flex-wrap:wrap;
+}
+
+.kpi-card{
+    background: rgba(20,28,45,0.85);
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    width:220px;
+    backdrop-filter: blur(10px);
+    transition:0.4s;
+    box-shadow:0 0 30px rgba(59,130,246,0.1);
+}
+
+.kpi-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 50px rgba(59,130,246,0.3);
+}
+
+.kpi-card h2{
+    color:#60A5FA;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+/* Default Sidebar Text */
+.sidebar a{
+    background-color:transparent !important;
+    color:#AFCBFF !important;   /* Soft premium icy blue */
+}
+
+/* Hover Text */
+.sidebar a:hover{
+    color:#60A5FA !important;   /* Bright sapphire blue */
+}
+
+/* Active (Selected) Text */
+.sidebar a.active,
+.sidebar a:focus,
+.sidebar a:active{
+    background:linear-gradient(90deg,#2563EB,#3B82F6) !important;
+    color:#FFFFFF !important;   /* Clean highlight text */
+    font-weight:600;
+    box-shadow:0 0 25px rgba(59,130,246,0.6);
+}
+
+/* ============================= */
+/* DASHBOARD 5 & 6 PAGE SUPPORT */
+/* ============================= */
+
+/* Dashboard Titles */
+
+.main h1{
+    font-size:36px;
+    margin-bottom:25px;
+    background:linear-gradient(90deg,#3B82F6,#60A5FA,#93C5FD);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+/* Tableau Dashboard Container */
+
+.tableauPlaceholder{
+    width:100%;
+    border-radius:18px;
+    overflow:hidden;
+    margin-top:20px;
+    box-shadow:0 0 35px rgba(59,130,246,0.25);
+}
+
+
+/* Tableau iframe/object */
+
+.tableauViz{
+    border-radius:18px;
+}
+
+
+/* Dashboard Content Glass */
+
+.dashboard-card{
+    background:rgba(20,28,45,0.85);
+    border-radius:18px;
+    padding:30px;
+    margin-top:30px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 40px rgba(59,130,246,0.15);
+}
+
+
+/* Dashboard Hover Glow */
+
+.dashboard-card:hover{
+    box-shadow:0 0 60px rgba(59,130,246,0.35);
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+
+/* Premium Tagline */
+
+.tagline{
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom:25px;
+    text-align:left;
+    font-weight:500;
+    background:linear-gradient(90deg,#60A5FA,#3B82F6,#93C5FD);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    opacity:0.95;
+}
+

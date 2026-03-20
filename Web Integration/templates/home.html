@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>iRevolution</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ✅ SIDEBAR -->
+<div class="sidebar">
+
+<div class="logo">
+iForecast
+</div>
+
+<a href="/home">🏠 Home</a>
+<a href="/dashboards">📊 Dashboards</a>
+<a href="/stories">📖 Stories</a>
+<a href="/about">📘 About</a>
+<a href="/contact">☎ Contact</a>
+
+</div>
+
+
+<!-- ✅ MAIN CONTENT -->
+<div class="main">
+
+<h1>
+iForecast: Time-Series Modeling and Sales Forecasting of iPhone
+</h1>
+
+<p class="tagline">
+Predicting the future of iPhone sales in India using data analytics, time-series modeling, and machine learning.
+</p>
+
+
+<div class="glass">
+
+<p>
+iForecast is a data analytics and machine learning project that explores the growth and future trajectory of Apple's iPhone in the Indian smartphone market. 
+Using time-series modeling, historical sales trends, and predictive analytics, this project forecasts iPhone sales and revenue growth through 2036. 
+The platform provides interactive dashboards and visual insights that help understand market performance, product demand, and future opportunities for Apple's iPhone ecosystem in India.
+</p>
+
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div style="margin-top:40px;">
+
+<a href="/dashboards">
+<button class="big-btn gold">
+View Dashboards →
+</button>
+</a>
+
+<a href="/stories">
+<button class="big-btn outline">
+View Data Stories →
+</button>
+</a>
+
+</div>
+
+
+
+<!-- KPI SECTION -->
+
+<div style="display:flex; gap:30px; margin-top:60px;">
+
+<div class="glass">
+<div class="kpi">15%+ Market Share Growth</div>
+iPhone Growth in India
+</div>
+
+<div class="glass">
+<div class="kpi">₹1L Cr+ Market Size</div>
+Premium smartphone Segment
+</div>
+
+<div class="glass">
+<div class="kpi">Tier-1 City Dominance</div>
+Urban Consumer Adoption Trends
+</div>
+
+</div>
+
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

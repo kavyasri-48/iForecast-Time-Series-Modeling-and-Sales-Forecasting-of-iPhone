@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iForecast Analytics Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="navbar">
+
+    <div class="logo">iForecast</div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        <p class="menu-title">Dashboards</p>
+        <a href="/dashboard1">Exclusive Summary</a>
+        <a href="/dashboard2">Product Insights</a>
+        <a href="/dashboard3">Market Share</a>
+        <a href="/dashboard4">Sales Trends</a>
+        <a href="/dashboard5">Revenue Forecast</a>
+        <a href="/dashboard6">Product Performance</a>
+
+        <p class="menu-title">Stories</p>
+        <a href="/story1">Market Power</a>
+        <a href="/story2">Cracking Market</a>
+
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+
+    </div>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

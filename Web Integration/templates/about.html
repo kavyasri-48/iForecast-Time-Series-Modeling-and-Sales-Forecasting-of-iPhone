@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ✅ SIDEBAR -->
+<div class="sidebar">
+<div class="logo">iForecast</div>
+
+
+<a href="/home">🏠 Home</a>
+<a href="/dashboards">📊 Dashboards</a>
+<a href="/stories">📖 Stories</a>
+<a href="/about">📘 About</a>
+<a href="/contact">☎ Contact</a>
+</div>
+
+
+<!-- ✅ MAIN -->
+<div class="main">
+
+<h1>About This Project</h1>
+
+<div class="glass">
+
+<p>
+iForecast is a student data analytics project focused on analyzing and forecasting Apple's iPhone sales performance in the Indian smartphone market. 
+The project uses time-series modeling and machine learning techniques to analyze historical data and generate predictions for future iPhone sales and revenue growth up to 2036.
+</p>
+
+<br>
+
+<p>
+Through interactive Tableau dashboards and visual analytics, the platform provides insights into product trends, market share, revenue performance, and long-term growth patterns. 
+These dashboards help users understand how iPhone sales have evolved over time and how future trends may shape the market.
+</p>
+
+<br>
+
+<p>
+Built using Flask and modern web technologies, this platform integrates data visualization, analytics, and predictive modeling to demonstrate how data science can be used to understand market behavior and forecast future business outcomes.
+</p>
+
+<br>
+
+<p>
+This project showcases practical skills in data analytics, data visualization, machine learning forecasting, and dashboard development.
+</p>
+
+
+</div>
+
+
+
+<!-- ✅ FEATURES SECTION -->
+
+<div style="display:flex; gap:30px; margin-top:40px; flex-wrap:wrap;">
+
+<div class="glass">
+<h2>📊 Interactive Dashboards</h2>
+<p>Visual exploration of sales, revenue, and market share.</p>
+</div>
+
+<div class="glass">
+<h2>📖 Data Storytelling</h2>
+<p>Structured narratives uncovering key business insights.</p>
+</div>
+
+<div class="glass">
+<h2>⚡ Scalable Architecture</h2>
+<p>Designed for future AI-driven forecasting integration.</p>
+</div>
+
+</div>
+
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

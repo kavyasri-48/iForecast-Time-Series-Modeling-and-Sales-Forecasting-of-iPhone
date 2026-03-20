@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stories</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ✅ SIDEBAR -->
+<div class="sidebar">
+
+<div class="logo">
+iForecast
+</div>
+
+<a href="/home">🏠 Home</a>
+<a href="/dashboards">📊 Dashboards</a>
+<a href="/stories">📖 Stories</a>
+<a href="/about">📘 About</a>
+<a href="/contact">☎ Contact</a>
+
+</div>
+
+
+<!-- ✅ MAIN -->
+<div class="main">
+
+<h1>Data Stories</h1>
+
+<div class="glass">
+
+<p>
+The data stories provide a narrative view of Apple's iPhone journey in India, highlighting key trends, growth patterns, and future projections. 
+Using visual storytelling and data-driven insights, these stories explain how historical data and predictive models reveal the evolving impact of iPhone in the Indian smartphone market.
+</p>
+
+
+</div>
+
+
+<!-- ✅ STORY BUTTONS -->
+
+<div style="display:flex; gap:30px; margin-top:40px;">
+
+<a href="/story1">
+<button class="big-btn gold">
+🚀 Market Power Story
+</button>
+</a>
+
+<a href="/story2">
+<button class="big-btn outline">
+📊 Cracking the Market
+</button>
+</a>
+
+</div>
+
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

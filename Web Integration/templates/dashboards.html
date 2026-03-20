@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboards</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ✅ SIDEBAR -->
+<div class="sidebar">
+
+<div class="logo">
+iForecast
+</div>
+
+<a href="/home">🏠 Home</a>
+<a href="/dashboards">📊 Dashboards</a>
+<a href="/stories">📖 Stories</a>
+<a href="/about">📘 About</a>
+<a href="/contact">☎ Contact</a>
+
+</div>
+
+
+<!-- ✅ MAIN -->
+<div class="main">
+
+<h1>Executive Dashboards</h1>
+
+<div class="glass">
+
+<p>
+Explore interactive dashboards analyzing historical iPhone sales data, revenue performance, market trends, and predictive forecasts. 
+These dashboards present insights derived from time-series modeling and machine learning techniques, helping visualize both past trends and future projections of iPhone growth in India up to 2036.
+</p>
+
+
+</div>
+
+
+<!-- ✅ BIG NAVIGATION CARDS -->
+
+<div style="display:flex; gap:30px; margin-top:40px; flex-wrap:wrap;">
+
+<a href="/dashboard1">
+<button class="big-btn gold">📊 Exclusive Summary</button>
+</a>
+
+<a href="/dashboard2">
+<button class="big-btn outline">📱 Product Insights</button>
+</a>
+
+<a href="/dashboard3">
+<button class="big-btn gold">🌍 Market Share</button>
+</a>
+
+<a href="/dashboard4">
+<button class="big-btn outline">💰 Sales & Revenue</button>
+</a>
+
+<a href="/dashboard5">
+<button class="big-btn outline">📈 Revenue Growth & Forecast</button>
+</a>
+
+<a href="/dashboard6">
+<button class="big-btn outline">📦 Product & Market Performance</button>
+</a>
+
+</div>
+
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
